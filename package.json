@@ -1,0 +1,27 @@
+{
+  "name": "gacha-game-system",
+  "version": "1.0.0",
+  "authors": [
+    "Gilles Perreymond <gilles.perreymond@metronlab.com>"
+  ],
+  "scripts": {
+    "start:services": "moleculer-runner --repl --hot --config moleculer.config.js services",
+    "start": "moleculer-runner --config moleculer.config.js services",
+    "standard": "standard",
+    "test:services": "jest --coverage --verbose --detectOpenHandles --forceExit"
+  },
+  "dependencies": {
+    "commander": "6.2.1",
+    "moleculer": "0.14.11",
+    "moleculer-cron": "0.0.2",
+    "moleculer-db": "0.8.11",
+    "moleculer-db-adapter-rethinkdb": "0.2.9",
+    "moleculer-repl": "0.6.4",
+    "moleculer-web": "0.9.1",
+    "nconf": "0.11.0"
+  },
+  "devDependencies": {
+    "jest": "26.6.3",
+    "standard": "16.0.3"
+  }
+}
